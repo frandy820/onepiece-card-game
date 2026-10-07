@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海贼王卡牌对战 · 交付验收报告 v1.0</title>
+<style>
+  :root { --ink:#1f2a3d; --paper:#fbf7ee; --line:#d8cfba; --red:#c0392b; --gold:#b7791f; --sea:#1c7ed6; --ok:#2f9e44; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif; background:var(--paper); color:var(--ink); line-height:1.7; }
+  .page { max-width:860px; margin:0 auto; padding:48px 28px 80px; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:18px; margin-bottom:28px; }
+  header h1 { font-size:30px; letter-spacing:2px; }
+  header h1 span { color:var(--red); }
+  header .sub { color:#6b5d45; font-size:14px; margin-top:6px; letter-spacing:1px; }
+  h2 { font-size:19px; margin:34px 0 12px; padding-left:10px; border-left:5px solid var(--red); }
+  h3 { font-size:15px; margin:18px 0 8px; color:#3a3cacking4a; }
+  p { margin:8px 0; font-size:14px; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:13px; background:#fff; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  th { background:#f0e9d8; font-weight:700; }
+  code { background:#eee6d2; padding:1px 6px; border-radius:4px; font-size:12.5px; font-family:Consolas,monospace; }
+  .ok { color:var(--ok); font-weight:700; }
+  .gap { color:var(--red); font-weight:700; }
+  .metrics { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:16px 0; }
+  .metric { background:#fff; border:1.5px solid var(--line); border-top:4px solid var(--gold); padding:12px 14px; }
+  .metric .v { font-size:26px; font-weight:900; color:var(--red); }
+  .metric .k { font-size:12px; color:#6b5d45; }
+  .note { background:#fff8e6; border:1px solid #e8d59a; padding:10px 14px; font-size:13px; margin:12px 0; }
+  .steps { counter-reset:s; }
+  .steps li { list-style:none; margin:10px 0; padding-left:38px; position:relative; font-size:14px; }
+  .steps li::before { counter-increment:s; content:counter(s); position:absolute; left:0; top:2px; width:26px; height:26px; border-radius:50%; background:var(--red); color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:13px; }
+  footer { margin-top:44px; padding-top:14px; border-top:1px solid var(--line); font-size:12px; color:#8a7c60; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>🏴‍☠️ 海贼王·伟大航路卡牌对战 <span>交付验收报告</span></h1>
+    <div class="sub">版本 v1.0 · 2026-10-07 · 非商业同人学习项目 · 纯前端 H5（零依赖、零构建）</div>
+  </header>
+
+  <div class="metrics">
+    <div class="metric"><div class="v">73</div><div class="k">卡牌总数（60 人物 + 13 装备）</div></div>
+    <div class="metric"><div class="v">11×27</div><div class="k">剧情章节 × 关卡（按原著顺序）</div></div>
+    <div class="metric"><div class="v">40/40</div><div class="k">回归测试通过项</div></div>
+    <div class="metric"><div class="v">3</div><div class="k">AI 难度档位 × 6 策略风格</div></div>
+    <div class="metric"><div class="v">15</div><div class="k">SSS 卡（完美通关奖励池）</div></div>
+  </div>
+
+  <h2>一、玩法与系统</h2>
+  <table>
+    <tr><th style="width:130px">模块</th><th>实现情况</th></tr>
+    <tr><td>冒险模式</td><td>11 章按剧情顺序解锁（东海→和之国），每关两波敌人（小弟→BOSS），不可跳关；通关掉落新卡 + 金币；<b>满血或满积分完美通关额外发放 1 张 SSS 卡</b>，收藏页可查</td></tr>
+    <tr><td>对战模式</td><td>单机 AI 三档难度（简单 N/R 卡池 70HP、普通 R/SR 100HP、困难全 BOSS 卡池 150HP×1.25 强度），分层卡池防难度失真</td></tr>
+    <tr><td>战斗体系</td><td>游戏王式移动端简化：船长 HP、能量（+3/回合）、召唤失调、攻/防/HP、<b>主动技能手动发动</b>（耗能+冷却）、<b>被动技能自动触发</b>（光环/复活/狂化）、装备卡三类各 1 件（属性+专属被动）、灼烧/中毒/眩晕/冰冻/束缚/封印状态、清场后可打船长、40 回合超时按血量比判定</td></tr>
+    <tr><td>收集系统</td><td>图鉴（稀有度筛选）、卡组编辑（15 张、同名≤3）、抽卡商店（40 抽保底 SSR+）、获得/消耗台账、SSS 不进普通池</td></tr>
+    <tr><td>存档安全</td><td>localStorage 主档 + 每次写入前自动备份；损坏自动回滚并提示；战斗中刷新/切后台自动保存，重进可恢复；Base64 导出/导入跨设备迁移</td></tr>
+  </table>
+
+  <h2>二、验证结果</h2>
+  <table>
+    <tr><th>验证项</th><th style="width:90px">结果</th><th>证据</th></tr>
+    <tr><td>规则回归（召唤/攻击/技能/装备/波次/胜负/SSS 发放/存档回滚/RNG 确定性）</td><td class="ok">通过</td><td><code>node tests/run-tests.js</code> → PASS 40 / FAIL 0</td></tr>
+    <tr><td>全剧情可通关性（起始卡组模拟）</td><td class="ok">通过</td><td>27 关模拟 24W/3L；ch1 新手关 100%（智能脚本玩家）</td></tr>
+    <tr><td>平衡矩阵（卡组强度 × 关卡）</td><td class="ok">达标</td><td>前中期 12/12；ch7 10/10；ch9 8/10；终局 ch10 25~40%（练度挑战区）</td></tr>
+    <tr><td>难度曲线（scale 0.85→1.15，敌方 HP 40→98）</td><td class="ok">单调递增</td><td>40 轮模拟迭代校准（波次结构、能量节奏、AI 召唤规则均经数据修正）</td></tr>
+    <tr><td>中断恢复演练</td><td class="ok">通过</td><td>引擎状态全量 JSON 可序列化；战斗中刷新 → 首页"继续中断的战斗"</td></tr>
+    <tr><td>存档破坏演练</td><td class="ok">通过</td><td>主档写坏 JSON → 自动回滚备份档（测试用例覆盖）</td></tr>
+    <tr><td>语法/引用完整性</td><td class="ok">通过</td><td>10 个 JS 文件 <code>node --check</code> 全过；index.html 8 个引用 0 缺失</td></tr>
+    <tr><td>版本标记</td><td class="ok">可用</td><td>git tag v1.0；README 含回滚命令（checkout tag → push，链接不变）</td></tr>
+  </table>
+
+  <h2>三、已知缺口与假设（如实说明）</h2>
+  <table>
+    <tr><th>项</th><th>状态</th><th>说明与对策</th></tr>
+    <tr><td>D 盘爬图素材</td><td class="gap">未找到</td><td>已检索 D 盘全部常见目录（YQQ/1220 为 2022 个人照片、Pictures 为相机原图、各下载目录无命中）。全部卡面先用<b>程序生成的悬赏令风 SVG 占位图</b>；图片到位后按 <code>CARD_ART_REPLACEMENT.md</code> 清单放入 <code>assets/cards/</code>（文件名=卡牌ID）即自动替换，无需改代码</td></tr>
+    <tr><td>GitHub Pages 在线链接</td><td class="gap">待用户推送</td><td>本机无 GitHub 凭据（gh CLI 未装、credential 弹窗被取消），无法代为推送。已备 <code>publish.bat</code> 一键脚本 + README 图文步骤，约 10 分钟可上线</td></tr>
+    <tr><td>真机测试（iPhone/安卓）</td><td class="gap">待用户验证</td><td>已按移动端最佳实践实现（viewport-fit、safe-area、触控目标、防双击缩放、竖屏 390~480px 基准）；<code>serve-local.bat</code> 可局域网真机试玩</td></tr>
+  </table>
+
+  <h2>四、发布步骤（10 分钟上线）</h2>
+  <ol class="steps">
+    <li>GitHub 新建<b>空的公开仓库</b>（不要勾选初始化 README）</li>
+    <li>双击 <code>publish.bat 你的用户名 仓库名</code>（首次会弹 GitHub 登录授权）</li>
+    <li>仓库 Settings → Pages → Source 选 <code>main / (root)</code> → Save</li>
+    <li>等 1~2 分钟，访问 <code>https://用户名.github.io/仓库名/</code>，发到微信/QQ 手机点开即玩</li>
+  </ol>
+  <div class="note">💡 出问题回滚：<code>git checkout v1.0 -- . && git commit -m "rollback" && git push</code>，Pages 自动重新部署、链接不变。</div>
+
+  <h2>五、后续可扩展</h2>
+  <p>同机轮流对战（引擎已支持双端操作，UI 需加遮罩）· 周回活动关卡 · 卡牌升级/突破 · 剧情支线（Z 篇/艾格赫德）· 平衡性按玩家反馈微调（改 <code>cards.js</code>/<code>chapters.js</code> 两个文件即可，README 有字段说明）</p>
+
+  <footer>
+    本报告属于交付物的一部分 · 游戏 MIT License（代码）· One Piece 角色版权归尾田荣一郎/集英社/东映动画所有，仅供学习交流
+  </footer>
+</div>
+</body>
+</html>
