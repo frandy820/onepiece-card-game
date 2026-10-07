@@ -33,7 +33,7 @@ function T(name, cond, detail) {
 }
 
 /* ---------- 1. 数据完整性 ---------- */
-T('cards: 60 char cards', cards.CHARACTER_CARDS.length === 60, 'got ' + cards.CHARACTER_CARDS.length);
+T('cards: 300 char cards', cards.CHARACTER_CARDS.length === 300, 'got ' + cards.CHARACTER_CARDS.length);
 T('cards: 13 equips', cards.EQUIP_CARDS.length === 13, 'got ' + cards.EQUIP_CARDS.length);
 {
   const badSkill = cards.CHARACTER_CARDS.filter(c => {

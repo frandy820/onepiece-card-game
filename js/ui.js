@@ -51,7 +51,8 @@ function artOf(cardId) {
   const c = getCard(cardId);
   if (!c) return '';
   const realIds = (typeof REAL_ART_IDS !== 'undefined') ? REAL_ART_IDS : [];
-  if (!c.kind && realIds.indexOf(cardId) >= 0) return 'assets/cards/' + cardId + '.jpg';
+  const hasReal = realIds instanceof Set ? realIds.has(cardId) : (realIds.indexOf && realIds.indexOf(cardId) >= 0);
+  if (!c.kind && hasReal) return 'assets/cards/' + cardId + '.jpg';
   return cardArtURI(c, (FACTIONS[c.faction] || {}).color, (RARITY[c.rarity] || {}).color);
 }
 

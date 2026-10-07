@@ -1,0 +1,8008 @@
+[
+ {
+  "id": "nc001",
+  "name": "光月御田",
+  "en": "光月おでん",
+  "faction": "revolutionary",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 15,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_1",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-001 (L 光月おでん).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc002",
+  "name": "以藏",
+  "en": "イゾウ",
+  "faction": "baroque",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 15,
+  "def": 11,
+  "hp": 56,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_2",
+   "name": "能量汲取",
+   "type": "active",
+   "energy": 1,
+   "cd": 3,
+   "desc": "获得 2 点能量。",
+   "effects": [
+    {
+     "type": "gainEnergy",
+     "value": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-002 (R イゾウ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc003",
+  "name": "乔巴",
+  "en": "トニートニー・チョッパー",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 21,
+  "def": 15,
+  "hp": 69,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_3",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-006 (SR トニートニー・チョッパー).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc004",
+  "name": "大和",
+  "en": "ヤマト",
+  "faction": "emperor",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 15,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_4",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 26 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-007 (C ヤマト).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc005",
+  "name": "リトルオーズJr.",
+  "en": "リトルオーズJr.",
+  "faction": "cp9",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 15,
+  "def": 11,
+  "hp": 57,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_5",
+   "name": "能量汲取",
+   "type": "active",
+   "energy": 1,
+   "cd": 3,
+   "desc": "获得 2 点能量。",
+   "effects": [
+    {
+     "type": "gainEnergy",
+     "value": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-008 (R リトルオーズJr.).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc006",
+  "name": "卡文迪什",
+  "en": "キャベンディッシュ",
+  "faction": "baroque",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 15,
+  "hp": 68,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_6",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-012 (SR キャベンディッシュ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc007",
+  "name": "光月日和",
+  "en": "光月日和",
+  "faction": "bigmom",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 15,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_7",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 26 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-013 (R 光月日和).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc008",
+  "name": "山治",
+  "en": "サンジ",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 15,
+  "def": 11,
+  "hp": 57,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_8",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-014 (R サンジ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc009",
+  "name": "阿普",
+  "en": "スクラッチメン・アプー",
+  "faction": "beast",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 14,
+  "hp": 68,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_9",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 26 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-015 (R スクラッチメン・アプー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc010",
+  "name": "布鲁诺",
+  "en": "ブルーノ",
+  "faction": "cp9",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 21,
+  "def": 15,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_10",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-017 (C ブルーノ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc012",
+  "name": "稻兹",
+  "en": "イナズマ",
+  "faction": "revolutionary",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 17,
+  "def": 13,
+  "hp": 63,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_12",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-022 (SR イナズマ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc013",
+  "name": "エドワード・ウィーブル",
+  "en": "エドワード・ウィーブル",
+  "faction": "fishman",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 19,
+  "def": 14,
+  "hp": 64,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_13",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-023 (R エドワード・ウィーブル).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc014",
+  "name": "Mr.1",
+  "en": "Mr.1(ダズ・ボーネス)",
+  "faction": "baroque",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 14,
+  "hp": 69,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_14",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-027 (R Mr.1(ダズ・ボーネス)).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc015",
+  "name": "卡莉法",
+  "en": "カリファ",
+  "faction": "cp9",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 17,
+  "def": 13,
+  "hp": 63,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_15",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-031 (R カリファ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc016",
+  "name": "キュロス",
+  "en": "キュロス",
+  "faction": "pirate7",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 19,
+  "def": 14,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_16",
+   "name": "能量汲取",
+   "type": "active",
+   "energy": 1,
+   "cd": 3,
+   "desc": "获得 2 点能量。",
+   "effects": [
+    {
+     "type": "gainEnergy",
+     "value": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-040 (L キュロス).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc017",
+  "name": "库洛卡斯",
+  "en": "クロッカス",
+  "faction": "pirate7",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 19,
+  "def": 14,
+  "hp": 68,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_17",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-041 (C クロッカス).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc018",
+  "name": "布鲁克",
+  "en": "ブルック",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 17,
+  "def": 13,
+  "hp": 64,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_18",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-045 (C ブルック).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc019",
+  "name": "ラブーン",
+  "en": "ラブーン",
+  "faction": "emperor",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 19,
+  "def": 14,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_19",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-047 (C ラブーン).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc020",
+  "name": "ヴィオラ",
+  "en": "ヴィオラ",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 19,
+  "def": 14,
+  "hp": 67,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_20",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-052 (SR ヴィオラ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc021",
+  "name": "夏洛特",
+  "en": "シャーロット・フランペ",
+  "faction": "pirate7",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 17,
+  "def": 13,
+  "hp": 64,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_21",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-056 (R シャーロット・フランペ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc022",
+  "name": "白星",
+  "en": "しらほし",
+  "faction": "fishman",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 14,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_22",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-057 (SR しらほし).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc023",
+  "name": "冯·克雷",
+  "en": "Mr.2・ボン・クレー(ベンサム)",
+  "faction": "bigmom",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 19,
+  "def": 14,
+  "hp": 67,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_23",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 26 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-061 (SEC Mr.2・ボン・クレー(ベンサム)).jpg",
+   "rarity": "SEC"
+  }
+ },
+ {
+  "id": "nc024",
+  "name": "鸭鸭",
+  "en": "カルー",
+  "faction": "bigmom",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 17,
+  "def": 13,
+  "hp": 64,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_24",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-001 (C カルー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc026",
+  "name": "サウザンド・サニー号",
+  "en": "サウザンド・サニー号",
+  "faction": "marine",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 21,
+  "def": 15,
+  "hp": 71,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_26",
+   "name": "能量汲取",
+   "type": "active",
+   "energy": 1,
+   "cd": 3,
+   "desc": "获得 2 点能量。",
+   "effects": [
+    {
+     "type": "gainEnergy",
+     "value": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-009 (C サウザンド・サニー号).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc027",
+  "name": "路飞",
+  "en": "モンキー・D・ルフィ",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 18,
+  "def": 13,
+  "hp": 62,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_27",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-010 (L モンキー・D・ルフィ).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc029",
+  "name": "ガイモン",
+  "en": "ガイモン",
+  "faction": "baroque",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 15,
+  "def": 12,
+  "hp": 58,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_29",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-012 (C ガイモン).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc030",
+  "name": "加洛特",
+  "en": "キャロット",
+  "faction": "pirate7",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 23,
+  "def": 16,
+  "hp": 76,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_30",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-013 (C キャロット).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc031",
+  "name": "邦妮",
+  "en": "ジュエリー・ボニー",
+  "faction": "marine",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 18,
+  "def": 13,
+  "hp": 64,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_31",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-015 (SR ジュエリー・ボニー).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc032",
+  "name": "娜美",
+  "en": "ナミ",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 15,
+  "def": 11,
+  "hp": 57,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_32",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 26 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-017 (R ナミ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc033",
+  "name": "巴基",
+  "en": "バギー",
+  "faction": "pirate7",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 23,
+  "def": 16,
+  "hp": 76,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_33",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-018 (R バギー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc034",
+  "name": "ロロノア・ゾロ",
+  "en": "ロロノア・ゾロ",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 18,
+  "def": 14,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_34",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-019 (R ロロノア・ゾロ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc035",
+  "name": "乌索普",
+  "en": "ウソップ",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 15,
+  "def": 11,
+  "hp": 57,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_35",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-022 (R ウソップ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc037",
+  "name": "ドンキホーテ・ロシナンテ",
+  "en": "ドンキホーテ・ロシナンテ",
+  "faction": "pirate7",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 21,
+  "def": 15,
+  "hp": 71,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_37",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-025 (R ドンキホーテ・ロシナンテ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc038",
+  "name": "薇薇",
+  "en": "ネフェルタリ・ビビ",
+  "faction": "emperor",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 15,
+  "hp": 71,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_38",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 26 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-026 (SR ネフェルタリ・ビビ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc039",
+  "name": "比斯塔",
+  "en": "ビスタ",
+  "faction": "marine",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 15,
+  "def": 11,
+  "hp": 56,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_39",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-027 (C ビスタ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc040",
+  "name": "艾斯",
+  "en": "ポートガス・D・エース",
+  "faction": "cp9",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 21,
+  "def": 15,
+  "hp": 71,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_40",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-028 (R ポートガス・D・エース).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc041",
+  "name": "艾斯巴古",
+  "en": "アイスバーグ",
+  "faction": "bigmom",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 15,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_41",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 26 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-032 (C アイスバーグ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc042",
+  "name": "罗宾",
+  "en": "ニコ・ロビン",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 15,
+  "def": 11,
+  "hp": 56,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_42",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-036 (R ニコ・ロビン).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc043",
+  "name": "弗兰奇",
+  "en": "フランキー",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 21,
+  "def": 15,
+  "hp": 70,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_43",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-037 (R フランキー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc045",
+  "name": "战国",
+  "en": "センゴク",
+  "faction": "marine",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 15,
+  "hp": 71,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_45",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-044 (SR センゴク).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc046",
+  "name": "罗",
+  "en": "トラファルガー・ロー",
+  "faction": "pirate7",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 16,
+  "def": 12,
+  "hp": 61,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_46",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-045 (SR トラファルガー・ロー).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc047",
+  "name": "卡普",
+  "en": "モンキー・D・ガープ",
+  "faction": "marine",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 19,
+  "def": 14,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_47",
+   "name": "能量汲取",
+   "type": "active",
+   "energy": 1,
+   "cd": 3,
+   "desc": "获得 2 点能量。",
+   "effects": [
+    {
+     "type": "gainEnergy",
+     "value": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-049 (R モンキー・D・ガープ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc049",
+  "name": "ジンベエ",
+  "en": "ジンベエ",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 18,
+  "def": 14,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_49",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-055 (R ジンベエ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc050",
+  "name": "ベガパンク",
+  "en": "ベガパンク",
+  "faction": "bigmom",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 17,
+  "def": 13,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_50",
+   "name": "能量汲取",
+   "type": "active",
+   "energy": 1,
+   "cd": 3,
+   "desc": "获得 2 点能量。",
+   "effects": [
+    {
+     "type": "gainEnergy",
+     "value": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-056 (SR ベガパンク).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc051",
+  "name": "艾恩",
+  "en": "アイン",
+  "faction": "strawhat",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 14,
+  "hp": 67,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_51",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-002 (C アイン).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc052",
+  "name": "乌塔",
+  "en": "ウタ",
+  "faction": "cp9",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 18,
+  "def": 13,
+  "hp": 64,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_52",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-003 (SR ウタ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc053",
+  "name": "カリーナ",
+  "en": "カリーナ",
+  "faction": "bigmom",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 17,
+  "def": 13,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_53",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 26 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-004 (C カリーナ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc054",
+  "name": "シュガー",
+  "en": "シュガー",
+  "faction": "emperor",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 20,
+  "def": 15,
+  "hp": 68,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_54",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-005 (R シュガー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc055",
+  "name": "バカラ",
+  "en": "バカラ",
+  "faction": "baroque",
+  "rarity": "N",
+  "cost": 2,
+  "atk": 18,
+  "def": 13,
+  "hp": 64,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_55",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+8（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 8,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-007 (C バカラ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc056",
+  "name": "マキノ",
+  "en": "マキノ",
+  "faction": "bigmom",
+  "rarity": "N",
+  "cost": 1,
+  "atk": 17,
+  "def": 13,
+  "hp": 65,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_56",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 14 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 14
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-009 (C マキノ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc057",
+  "name": "モネ",
+  "en": "モネ",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 28,
+  "def": 18,
+  "hp": 88,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_57",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 13 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 13
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-010 (R モネ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc058",
+  "name": "お玉",
+  "en": "お玉",
+  "faction": "baroque",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 23,
+  "def": 19,
+  "hp": 76,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_58",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+9（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 9,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-012 (R お玉).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc059",
+  "name": "くいな",
+  "en": "くいな",
+  "faction": "cp9",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 26,
+  "def": 17,
+  "hp": 80,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_59",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-014 (C くいな).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc060",
+  "name": "ケイミー",
+  "en": "ケイミー",
+  "faction": "beast",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 28,
+  "def": 18,
+  "hp": 88,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_60",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-015 (C ケイミー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc061",
+  "name": "达斯琪",
+  "en": "たしぎ",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 24,
+  "def": 19,
+  "hp": 77,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_61",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-018 (SR たしぎ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc062",
+  "name": "旺达",
+  "en": "ワンダ",
+  "faction": "cp9",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 26,
+  "def": 17,
+  "hp": 79,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_62",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-019 (C ワンダ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc063",
+  "name": "アルビダ",
+  "en": "アルビダ",
+  "faction": "bigmom",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 28,
+  "def": 18,
+  "hp": 88,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_63",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 13 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 13
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-021 (C アルビダ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc064",
+  "name": "ヒナ",
+  "en": "ヒナ",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 24,
+  "def": 19,
+  "hp": 78,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_64",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 22 伤害并流血 2 回合（每回合 7）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 22
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 7,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-025 (R ヒナ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc065",
+  "name": "女帝汉库克",
+  "en": "ボア・ハンコック",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 26,
+  "def": 17,
+  "hp": 79,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_65",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-026 (SR ボア・ハンコック).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc066",
+  "name": "加莱特",
+  "en": "マーガレット",
+  "faction": "bigmom",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 28,
+  "def": 18,
+  "hp": 87,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_66",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 15 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-027 (R マーガレット).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc067",
+  "name": "蕾玖",
+  "en": "ヴィンスモーク・レイジュ",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 24,
+  "def": 19,
+  "hp": 79,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_67",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 15 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-031 (SR ヴィンスモーク・レイジュ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc071",
+  "name": "ベビー５",
+  "en": "ベビー５",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 30,
+  "def": 19,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_71",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-036 (C ベビー５).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc072",
+  "name": "リム",
+  "en": "リム",
+  "faction": "bigmom",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 25,
+  "def": 16,
+  "hp": 79,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_72",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-037 (R リム).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc073",
+  "name": "うるティ",
+  "en": "うるティ",
+  "faction": "beast",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 23,
+  "def": 18,
+  "hp": 75,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_73",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 22 伤害并流血 2 回合（每回合 7）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 22
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 7,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-039 (R うるティ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc074",
+  "name": "柯拉",
+  "en": "コアラ",
+  "faction": "revolutionary",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 30,
+  "def": 19,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_74",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-042 (SR コアラ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc075",
+  "name": "ステューシー",
+  "en": "ステューシー",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 25,
+  "def": 16,
+  "hp": 79,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_75",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-043 (R ステューシー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc076",
+  "name": "ブラックマリア",
+  "en": "ブラックマリア",
+  "faction": "baroque",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 23,
+  "def": 18,
+  "hp": 74,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_76",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-044 (C ブラックマリア).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc077",
+  "name": "ペローナ",
+  "en": "ペローナ",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 30,
+  "def": 19,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_77",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-045 (SR ペローナ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc078",
+  "name": "双指小姐",
+  "en": "ミス・ダブルフィンガー(ザラ)",
+  "faction": "strawhat",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 25,
+  "def": 17,
+  "hp": 80,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_78",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-046 (C ミス・ダブルフィンガー(ザラ)).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc079",
+  "name": "ミス・バレンタイン(ミキータ)",
+  "en": "ミス・バレンタイン(ミキータ)",
+  "faction": "fishman",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 23,
+  "def": 18,
+  "hp": 74,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_79",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 13 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 13
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-047 (C ミス・バレンタイン(ミキータ)).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc080",
+  "name": "丽贝卡",
+  "en": "レベッカ",
+  "faction": "emperor",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 30,
+  "def": 19,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_80",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-048 (R レベッカ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc081",
+  "name": "コニス",
+  "en": "コニス",
+  "faction": "strawhat",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 17,
+  "hp": 81,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_81",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-050 (C コニス).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc082",
+  "name": "斯慕吉",
+  "en": "シャーロット・スムージー",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 22,
+  "def": 18,
+  "hp": 73,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_82",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 22 伤害并流血 2 回合（每回合 7）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 22
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 7,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-051 (C シャーロット・スムージー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc083",
+  "name": "ベロ・ベティ",
+  "en": "ベロ・ベティ",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 30,
+  "def": 19,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_83",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-056 (C ベロ・ベティ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc084",
+  "name": "リリス",
+  "en": "リリス",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 17,
+  "hp": 82,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_84",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+9（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 9,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-058 (R リリス).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc085",
+  "name": "S-スネーク",
+  "en": "S-スネーク",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 22,
+  "def": 18,
+  "hp": 73,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_85",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-059 (R S-スネーク).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc086",
+  "name": "カリブー",
+  "en": "カリブー",
+  "faction": "bigmom",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 30,
+  "def": 19,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_86",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-007 (C カリブー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc087",
+  "name": "戈登",
+  "en": "ゴードン",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 17,
+  "hp": 83,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_87",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-011 (UC ゴードン).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc088",
+  "name": "青椒",
+  "en": "サイ",
+  "faction": "fishman",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 22,
+  "def": 18,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_88",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-012 (C サイ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc089",
+  "name": "海尔丁",
+  "en": "ハイルディン",
+  "faction": "bigmom",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 30,
+  "def": 19,
+  "hp": 90,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_89",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-018 (C ハイルディン).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc090",
+  "name": "巴托洛米奥",
+  "en": "バルトロメオ",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 27,
+  "def": 17,
+  "hp": 84,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_90",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+9（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 9,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-019 (C バルトロメオ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc091",
+  "name": "马尔科",
+  "en": "マルコ",
+  "faction": "strawhat",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 22,
+  "def": 18,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_91",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 13 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 13
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-023 (C マルコ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc092",
+  "name": "犬岚公爵",
+  "en": "イヌアラシ",
+  "faction": "fishman",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 29,
+  "def": 19,
+  "hp": 89,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_92",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 15 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-034 (C イヌアラシ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc093",
+  "name": "河松",
+  "en": "河松",
+  "faction": "emperor",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 27,
+  "def": 18,
+  "hp": 84,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_93",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+9（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 9,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-037 (C 河松).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc094",
+  "name": "基拉",
+  "en": "キラー",
+  "faction": "strawhat",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 22,
+  "def": 17,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_94",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 15 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-039 (UC キラー).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc095",
+  "name": "锦卫门",
+  "en": "錦えもん",
+  "faction": "fishman",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 29,
+  "def": 19,
+  "hp": 89,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_95",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-040 (SR 錦えもん).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc096",
+  "name": "光月桃之助",
+  "en": "光月モモの助",
+  "faction": "cp9",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 27,
+  "def": 18,
+  "hp": 85,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_96",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 22 伤害并流血 2 回合（每回合 7）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 22
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 7,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-041 (R 光月モモの助).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc097",
+  "name": "しのぶ",
+  "en": "しのぶ",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 22,
+  "def": 17,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_97",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-043 (C しのぶ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc098",
+  "name": "ジャンバール",
+  "en": "ジャンバール",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 29,
+  "def": 19,
+  "hp": 88,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_98",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 15 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-045 (C ジャンバール).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc099",
+  "name": "猫蝮蛇",
+  "en": "ネコマムシ",
+  "faction": "bigmom",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 27,
+  "def": 18,
+  "hp": 86,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_99",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 13 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 13
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-048 (C ネコマムシ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc100",
+  "name": "ベポ",
+  "en": "ベポ",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 22,
+  "def": 18,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_100",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 13 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 13
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-049 (R ベポ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc101",
+  "name": "基德",
+  "en": "ユースタス・キッド",
+  "faction": "baroque",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 29,
+  "def": 18,
+  "hp": 87,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_101",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+9（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 9,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-051 (SR ユースタス・キッド).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc102",
+  "name": "ワイヤー",
+  "en": "ワイヤー",
+  "faction": "fishman",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 27,
+  "def": 18,
+  "hp": 87,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_102",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-053 (C ワイヤー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc103",
+  "name": "德雷克",
+  "en": "X・ドレーク",
+  "faction": "beast",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 22,
+  "def": 18,
+  "hp": 72,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_103",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-054 (R X・ドレーク).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc106",
+  "name": "维尔戈",
+  "en": "ヴェルゴ",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 26,
+  "def": 17,
+  "hp": 79,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_106",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-065 (C ヴェルゴ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc107",
+  "name": "克利克",
+  "en": "クリーク",
+  "faction": "fishman",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 17,
+  "hp": 82,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_107",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-066 (C クリーク).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc108",
+  "name": "月光莫利亚",
+  "en": "ゲッコー・モリア",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 20,
+  "hp": 84,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_108",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+9（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 9,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-068 (R ゲッコー・モリア).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc109",
+  "name": "凯撒",
+  "en": "シーザー・クラウン",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 26,
+  "def": 17,
+  "hp": 80,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_109",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 22 伤害并流血 2 回合（每回合 7）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 22
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 7,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-069 (R シーザー・クラウン).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc110",
+  "name": "鹰眼米霍克",
+  "en": "ジュラキュール・ミホーク",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 17,
+  "hp": 81,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_110",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-070 (SR ジュラキュール・ミホーク).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc111",
+  "name": "暴君熊",
+  "en": "バーソロミュー・くま",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 20,
+  "hp": 84,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_111",
+   "name": "铁壁",
+   "type": "active",
+   "energy": 1,
+   "cd": 2,
+   "desc": "获得 15 点护盾。",
+   "effects": [
+    {
+     "type": "shield",
+     "target": "self",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-074 (R バーソロミュー・くま).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc112",
+  "name": "パシフィスタ",
+  "en": "パシフィスタ",
+  "faction": "bigmom",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 26,
+  "def": 17,
+  "hp": 80,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_112",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-075 (C パシフィスタ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc113",
+  "name": "ベラミー",
+  "en": "ベラミー",
+  "faction": "marine",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 25,
+  "def": 17,
+  "hp": 80,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_113",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+2。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 2,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-076 (C ベラミー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc114",
+  "name": "ミス・オールサンデー",
+  "en": "ミス・オールサンデー",
+  "faction": "revolutionary",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 20,
+  "hp": 84,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_114",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-079 (R ミス・オールサンデー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc115",
+  "name": "モチャ",
+  "en": "モチャ",
+  "faction": "revolutionary",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 27,
+  "def": 17,
+  "hp": 81,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_115",
+   "name": "猛击",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 伤害。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-081 (C モチャ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc116",
+  "name": "Mr.3",
+  "en": "Mr.3(ギャルディーノ)",
+  "faction": "baroque",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 25,
+  "def": 16,
+  "hp": 79,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_116",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 13 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 13
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-085 (UC Mr.3(ギャルディーノ)).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc117",
+  "name": "King",
+  "en": "キング",
+  "faction": "emperor",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 21,
+  "hp": 84,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_117",
+   "name": "鼓舞",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "自身攻击+9（2 回合）。",
+   "effects": [
+    {
+     "type": "selfBuff",
+     "stat": "atk",
+     "value": 9,
+     "duration": 2
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-091 (L キング).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc118",
+  "name": "Queen",
+  "en": "クイーン",
+  "faction": "emperor",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 27,
+  "def": 17,
+  "hp": 82,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_118",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-097 (R クイーン).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc119",
+  "name": "黒炭オロチ",
+  "en": "黒炭オロチ",
+  "faction": "pirate7",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 25,
+  "def": 16,
+  "hp": 78,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_119",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 20 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 20,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-098 (UC 黒炭オロチ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc120",
+  "name": "ササキ",
+  "en": "ササキ",
+  "faction": "baroque",
+  "rarity": "R",
+  "cost": 3,
+  "atk": 26,
+  "def": 21,
+  "hp": 84,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_120",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-101 (UC ササキ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc121",
+  "name": "杰克",
+  "en": "ジャック",
+  "faction": "emperor",
+  "rarity": "R",
+  "cost": 4,
+  "atk": 27,
+  "def": 17,
+  "hp": 83,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_121",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 18 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 18
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-102 (R ジャック).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc122",
+  "name": "霍金斯",
+  "en": "バジル・ホーキンス",
+  "faction": "beast",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 21,
+  "hp": 95,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_122",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 23 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 23,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-106 (UC バジル・ホーキンス).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc123",
+  "name": "フーズ・フー",
+  "en": "フーズ・フー",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 30,
+  "def": 21,
+  "hp": 83,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_123",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-109 (UC フーズ・フー).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc124",
+  "name": "ページワン",
+  "en": "ページワン",
+  "faction": "beast",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 38,
+  "def": 23,
+  "hp": 104,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_124",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-112 (R ページワン).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc125",
+  "name": "エドワード・ニューゲート",
+  "en": "エドワード・ニューゲート",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 35,
+  "def": 21,
+  "hp": 96,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_125",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-001 (L エドワード・ニューゲート).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc126",
+  "name": "アトモス",
+  "en": "アトモス",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 30,
+  "def": 21,
+  "hp": 83,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_126",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-003 (C アトモス).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc127",
+  "name": "カーリー・ダダン",
+  "en": "カーリー・ダダン",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 38,
+  "def": 23,
+  "hp": 103,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_127",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-005 (UC カーリー・ダダン).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc129",
+  "name": "サッチ",
+  "en": "サッチ",
+  "faction": "beast",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 37,
+  "def": 23,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_129",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-007 (C サッチ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc130",
+  "name": "乔兹",
+  "en": "ジョズ",
+  "faction": "marine",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 31,
+  "def": 22,
+  "hp": 86,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_130",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-008 (R ジョズ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc131",
+  "name": "スクアード",
+  "en": "スクアード",
+  "faction": "marine",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 35,
+  "def": 21,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_131",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-009 (UC スクアード).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc132",
+  "name": "ブレンハイム",
+  "en": "ブレンハイム",
+  "faction": "baroque",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 37,
+  "def": 23,
+  "hp": 102,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_132",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-012 (C ブレンハイム).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc133",
+  "name": "ホワイティベイ",
+  "en": "ホワイティベイ",
+  "faction": "cp9",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 31,
+  "def": 22,
+  "hp": 87,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_133",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-014 (UC ホワイティベイ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc134",
+  "name": "ラクヨウ",
+  "en": "ラクヨウ",
+  "faction": "marine",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 21,
+  "hp": 93,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_134",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-019 (UC ラクヨウ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc135",
+  "name": "モビー・ディック号",
+  "en": "モビー・ディック号",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 37,
+  "def": 23,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_135",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-024 (C モビー・ディック号).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc137",
+  "name": "伊万科夫",
+  "en": "エンポリオ・イワンコフ",
+  "faction": "revolutionary",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 24,
+  "hp": 95,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_137",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-049 (L エンポリオ・イワンコフ).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc138",
+  "name": "カバジ",
+  "en": "カバジ",
+  "faction": "marine",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 33,
+  "def": 20,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_138",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-052 (C カバジ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc139",
+  "name": "モージ",
+  "en": "モージ",
+  "faction": "fishman",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 21,
+  "hp": 95,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_139",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 20 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 20
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-060 (C モージ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc140",
+  "name": "モーリー",
+  "en": "モーリー",
+  "faction": "bigmom",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 25,
+  "hp": 96,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_140",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-061 (UC モーリー).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc141",
+  "name": "ゼット",
+  "en": "ゼット",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 33,
+  "def": 20,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_141",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-072 (L ゼット).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc142",
+  "name": "シキ",
+  "en": "シキ",
+  "faction": "fishman",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 21,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_142",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-075 (R シキ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc143",
+  "name": "希留",
+  "en": "シリュウ",
+  "faction": "beast",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 25,
+  "hp": 96,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_143",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-076 (R シリュウ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc144",
+  "name": "ダグラス・バレット",
+  "en": "ダグラス・バレット",
+  "faction": "baroque",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 21,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_144",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-079 (UC ダグラス・バレット).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc149",
+  "name": "赞高",
+  "en": "ジャンゴ",
+  "faction": "baroque",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 37,
+  "def": 23,
+  "hp": 102,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_149",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-100 (C ジャンゴ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc150",
+  "name": "戦桃丸",
+  "en": "戦桃丸",
+  "faction": "cp9",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 31,
+  "def": 22,
+  "hp": 86,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_150",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-104 (C 戦桃丸).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc151",
+  "name": "鹤",
+  "en": "つる",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 21,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_151",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-106 (UC つる).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc152",
+  "name": "ハグワール・D・サウロ",
+  "en": "ハグワール・D・サウロ",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 37,
+  "def": 23,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_152",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 23 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 23,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-109 (C ハグワール・D・サウロ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc153",
+  "name": "福尔波迪",
+  "en": "フルボディ",
+  "faction": "baroque",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 31,
+  "def": 22,
+  "hp": 87,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_153",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-111 (C フルボディ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc154",
+  "name": "赫鲁梅波",
+  "en": "ヘルメッポ",
+  "faction": "bigmom",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 21,
+  "hp": 93,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_154",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+3。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 3,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-113 (UC ヘルメッポ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc156",
+  "name": "クリエル",
+  "en": "クリエル",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 35,
+  "def": 21,
+  "hp": 96,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_156",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-004 (C クリエル).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc157",
+  "name": "スピード・ジル",
+  "en": "スピード・ジル",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 24,
+  "hp": 96,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_157",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 23 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 23,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-006 (C スピード・ジル).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc158",
+  "name": "ナミュール",
+  "en": "ナミュール",
+  "faction": "strawhat",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 33,
+  "def": 20,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_158",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 20 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 20
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-007 (C ナミュール).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc159",
+  "name": "ハルタ",
+  "en": "ハルタ",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 21,
+  "hp": 95,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_159",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-009 (C ハルタ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc160",
+  "name": "フォッサ",
+  "en": "フォッサ",
+  "faction": "marine",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 25,
+  "hp": 96,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_160",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 23 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 23,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-010 (C フォッサ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc161",
+  "name": "ブラメンコ",
+  "en": "ブラメンコ",
+  "faction": "baroque",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 20,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_161",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-011 (UC ブラメンコ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc162",
+  "name": "マーシャル・D・ティーチ",
+  "en": "マーシャル・D・ティーチ",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 21,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_162",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-012 (R マーシャル・D・ティーチ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc163",
+  "name": "火拳",
+  "en": "火拳",
+  "faction": "strawhat",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 25,
+  "hp": 97,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_163",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-018 (R 火拳).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc164",
+  "name": "克洛",
+  "en": "クロ",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 21,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_164",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-021 (L クロ).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc165",
+  "name": "ギン",
+  "en": "ギン",
+  "faction": "revolutionary",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 33,
+  "def": 21,
+  "hp": 93,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_165",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+3。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 3,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-024 (R ギン).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc166",
+  "name": "小八",
+  "en": "はっちゃん",
+  "faction": "fishman",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 34,
+  "def": 25,
+  "hp": 97,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_166",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-033 (UC はっちゃん).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc167",
+  "name": "ゼフ",
+  "en": "ゼフ",
+  "faction": "fishman",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 21,
+  "hp": 93,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_167",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-047 (R ゼフ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc168",
+  "name": "卡库",
+  "en": "カク",
+  "faction": "cp9",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 33,
+  "def": 20,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_168",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-059 (UC カク).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc170",
+  "name": "藤虎",
+  "en": "イッショウ",
+  "faction": "marine",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 33,
+  "def": 24,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_170",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 20 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 20
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-078 (SR イッショウ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc173",
+  "name": "克力架",
+  "en": "シャーロット・クラッカー",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 37,
+  "def": 23,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_173",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-108 (SR シャーロット・クラッカー).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc175",
+  "name": "佩罗斯佩罗",
+  "en": "シャーロット・ペロスペロー",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 37,
+  "def": 23,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_175",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-113 (SR シャーロット・ペロスペロー).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc176",
+  "name": "シュトロイゼン",
+  "en": "シュトロイゼン",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 32,
+  "def": 23,
+  "hp": 89,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_176",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 20 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 20
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-115 (R シュトロイゼン).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc177",
+  "name": "ネフェルタリ・コブラ",
+  "en": "ネフェルタリ・コブラ",
+  "faction": "fishman",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 21,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_177",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+3。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 3,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP04",
+   "file": "OP04-012 (C ネフェルタリ・コブラ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc178",
+  "name": "ジョーラ",
+  "en": "ジョーラ",
+  "faction": "baroque",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 36,
+  "def": 23,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_178",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP04",
+   "file": "OP04-025 (C ジョーラ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc179",
+  "name": "赛尼奥尔",
+  "en": "セニョール・ピンク",
+  "faction": "bigmom",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 32,
+  "def": 23,
+  "hp": 90,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_179",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 20 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 20
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP04",
+   "file": "OP04-026 (R セニョール・ピンク).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc180",
+  "name": "迪亚曼蒂",
+  "en": "ディアマンテ",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 34,
+  "def": 20,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_180",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 23 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 23,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP04",
+   "file": "OP04-028 (R ディアマンテ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc181",
+  "name": "托雷波尔",
+  "en": "トレーボル",
+  "faction": "strawhat",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 36,
+  "def": 22,
+  "hp": 100,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_181",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP04",
+   "file": "OP04-030 (R トレーボル).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc182",
+  "name": "Baby5",
+  "en": "ベビー5",
+  "faction": "fishman",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 32,
+  "def": 23,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_182",
+   "name": "斗志",
+   "type": "passive",
+   "desc": "每场战斗开始时攻击永久+3。",
+   "effects": [
+    {
+     "type": "permBuff",
+     "stat": "atk",
+     "value": 3,
+     "on": "turnStart",
+     "once": true
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP04",
+   "file": "OP04-032 (UC ベビー5).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc183",
+  "name": "レオ",
+  "en": "レオ",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 33,
+  "def": 20,
+  "hp": 91,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_183",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP04",
+   "file": "OP04-091 (UC レオ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc184",
+  "name": "卡彭",
+  "en": "カポネ・ベッジ",
+  "faction": "baroque",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 36,
+  "def": 22,
+  "hp": 100,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_184",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP04",
+   "file": "OP04-100 (R カポネ・ベッジ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc185",
+  "name": "カラス",
+  "en": "カラス",
+  "faction": "cp9",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 33,
+  "def": 23,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_185",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 13（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 13,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP05",
+   "file": "OP05-005 (R カラス).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc186",
+  "name": "ハック",
+  "en": "ハック",
+  "faction": "revolutionary",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 33,
+  "def": 20,
+  "hp": 90,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_186",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP05",
+   "file": "OP05-012 (C ハック).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc187",
+  "name": "リンドバーグ",
+  "en": "リンドバーグ",
+  "faction": "revolutionary",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 36,
+  "def": 22,
+  "hp": 99,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_187",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP05",
+   "file": "OP05-017 (R リンドバーグ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc188",
+  "name": "水牛",
+  "en": "バッファロー",
+  "faction": "pirate7",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 33,
+  "def": 24,
+  "hp": 92,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_188",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 15 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 15
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP05",
+   "file": "OP05-031 (C バッファロー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc189",
+  "name": "皮卡",
+  "en": "ピーカ",
+  "faction": "revolutionary",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 33,
+  "def": 20,
+  "hp": 90,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_189",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 20 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 20
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP05",
+   "file": "OP05-032 (SR ピーカ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc190",
+  "name": "おナミ",
+  "en": "おナミ",
+  "faction": "strawhat",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 36,
+  "def": 22,
+  "hp": 98,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_190",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 28 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP05",
+   "file": "OP05-062 (UC おナミ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc191",
+  "name": "香克斯",
+  "en": "シャンクス",
+  "faction": "emperor",
+  "rarity": "SR",
+  "cost": 4,
+  "atk": 33,
+  "def": 24,
+  "hp": 93,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_191",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-007 (SR シャンクス).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc192",
+  "name": "霍迪",
+  "en": "ホーディ・ジョーンズ",
+  "faction": "fishman",
+  "rarity": "SR",
+  "cost": 5,
+  "atk": 33,
+  "def": 20,
+  "hp": 90,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_192",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 23。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 23
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-020 (L ホーディ・ジョーンズ).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc193",
+  "name": "リューマ",
+  "en": "リューマ",
+  "faction": "revolutionary",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 42,
+  "def": 24,
+  "hp": 98,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_193",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 25。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 25
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-036 (R リューマ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc194",
+  "name": "荒牧",
+  "en": "アラマキ",
+  "faction": "baroque",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 43,
+  "def": 25,
+  "hp": 102,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_194",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 31 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 31,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-043 (SR アラマキ).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc195",
+  "name": "伊治",
+  "en": "ヴィンスモーク・イチジ",
+  "faction": "bigmom",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 50,
+  "def": 29,
+  "hp": 118,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_195",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 25。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 25
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-060 (C ヴィンスモーク・イチジ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc196",
+  "name": "尼治",
+  "en": "ヴィンスモーク・ニジ",
+  "faction": "emperor",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 42,
+  "def": 24,
+  "hp": 99,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_196",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 14（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 14,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-064 (C ヴィンスモーク・ニジ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc197",
+  "name": "勇治",
+  "en": "ヴィンスモーク・ヨンジ",
+  "faction": "strawhat",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 43,
+  "def": 25,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_197",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 28 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-066 (C ヴィンスモーク・ヨンジ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc198",
+  "name": "アブサロム",
+  "en": "アブサロム",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 51,
+  "def": 29,
+  "hp": 118,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_198",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 31 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 31,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-081 (R アブサロム).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc199",
+  "name": "オーズ",
+  "en": "オーズ",
+  "faction": "beast",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 42,
+  "def": 24,
+  "hp": 100,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_199",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-083 (UC オーズ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc200",
+  "name": "ドクトル・ホグバック",
+  "en": "ドクトル・ホグバック",
+  "faction": "baroque",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 42,
+  "def": 25,
+  "hp": 100,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_200",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 31 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 31,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-090 (R ドクトル・ホグバック).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc201",
+  "name": "瓦夷帕",
+  "en": "ワイパー",
+  "faction": "baroque",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 51,
+  "def": 29,
+  "hp": 119,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_201",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 25。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 25
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP06",
+   "file": "OP06-114 (UC ワイパー).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc203",
+  "name": "アラディン",
+  "en": "アラディン",
+  "faction": "fishman",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 46,
+  "def": 27,
+  "hp": 109,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_203",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 17 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 17
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP07",
+   "file": "OP07-020 (C アラディン).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc204",
+  "name": "乌尔基",
+  "en": "ウルージ",
+  "faction": "emperor",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 40,
+  "def": 23,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_204",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 28 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP07",
+   "file": "OP07-021 (R ウルージ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc205",
+  "name": "フィッシャー・タイガー",
+  "en": "フィッシャー・タイガー",
+  "faction": "fishman",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 49,
+  "def": 28,
+  "hp": 115,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_205",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 22 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 22
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP07",
+   "file": "OP07-032 (R フィッシャー・タイガー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc206",
+  "name": "ボア・サンダーソニア",
+  "en": "ボア・サンダーソニア",
+  "faction": "revolutionary",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 47,
+  "def": 27,
+  "hp": 110,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_206",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 22 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 22
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP07",
+   "file": "OP07-050 (C ボア・サンダーソニア).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc207",
+  "name": "ボア・マリーゴールド",
+  "en": "ボア・マリーゴールド",
+  "faction": "marine",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 40,
+  "def": 23,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_207",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP07",
+   "file": "OP07-052 (C ボア・マリーゴールド).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc208",
+  "name": "フォクシー",
+  "en": "フォクシー",
+  "faction": "emperor",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 48,
+  "def": 28,
+  "hp": 113,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_208",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 14（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 14,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP07",
+   "file": "OP07-059 (L フォクシー).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc209",
+  "name": "シャクヤク",
+  "en": "シャクヤク",
+  "faction": "strawhat",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 47,
+  "def": 27,
+  "hp": 111,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_209",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 28 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP08",
+   "file": "OP08-046 (R シャクヤク).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc210",
+  "name": "デュバル",
+  "en": "デュバル",
+  "faction": "bigmom",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 40,
+  "def": 23,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_210",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 28 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP08",
+   "file": "OP08-088 (UC デュバル).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc211",
+  "name": "カルガラ",
+  "en": "カルガラ",
+  "faction": "emperor",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 48,
+  "def": 28,
+  "hp": 112,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_211",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 17 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 17
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP08",
+   "file": "OP08-098 (L カルガラ).jpg",
+   "rarity": "L"
+  }
+ },
+ {
+  "id": "nc212",
+  "name": "シャチ＆ペンギン",
+  "en": "シャチ＆ペンギン",
+  "faction": "revolutionary",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 48,
+  "def": 28,
+  "hp": 112,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_212",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 14（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 14,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-003 (C シャチ＆ペンギン).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc213",
+  "name": "シルバーズ・レイリー",
+  "en": "シルバーズ・レイリー",
+  "faction": "emperor",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 40,
+  "def": 23,
+  "hp": 94,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_213",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 22 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 22
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-005 (R シルバーズ・レイリー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc214",
+  "name": "ヒート",
+  "en": "ヒート",
+  "faction": "emperor",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 48,
+  "def": 27,
+  "hp": 111,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_214",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-007 (C ヒート).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc215",
+  "name": "本·贝克曼",
+  "en": "ベン・ベックマン",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 48,
+  "def": 28,
+  "hp": 113,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_215",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 14（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 14,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-009 (SR ベン・ベックマン).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc216",
+  "name": "耶稣布",
+  "en": "ヤソップ",
+  "faction": "cp9",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 40,
+  "def": 23,
+  "hp": 95,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_216",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 25。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 25
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-013 (R ヤソップ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc217",
+  "name": "拉奇·鲁",
+  "en": "ラッキー・ルウ",
+  "faction": "beast",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 47,
+  "def": 27,
+  "hp": 110,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_217",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 28 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-015 (R ラッキー・ルウ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc218",
+  "name": "ロックスター",
+  "en": "ロックスター",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 48,
+  "def": 28,
+  "hp": 114,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_218",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-016 (C ロックスター).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc219",
+  "name": "アバロ・ピサロ",
+  "en": "アバロ・ピサロ",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 40,
+  "def": 23,
+  "hp": 95,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_219",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 25。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 25
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-082 (C アバロ・ピサロ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc220",
+  "name": "カタリーナ・デボン",
+  "en": "カタリーナ・デボン",
+  "faction": "marine",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 47,
+  "def": 27,
+  "hp": 109,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_220",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 17 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 17
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-084 (UC カタリーナ・デボン).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc221",
+  "name": "ジーザス・バージェス",
+  "en": "ジーザス・バージェス",
+  "faction": "baroque",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 48,
+  "def": 28,
+  "hp": 114,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_221",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-086 (R ジーザス・バージェス).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc222",
+  "name": "哥尔·D·罗杰",
+  "en": "ゴール・D・ロジャー",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 40,
+  "def": 24,
+  "hp": 96,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_222",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 17 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 17
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP09",
+   "file": "OP09-118 (SEC ゴール・D・ロジャー).jpg",
+   "rarity": "SEC"
+  }
+ },
+ {
+  "id": "nc223",
+  "name": "サンファン・ウルフ",
+  "en": "サンファン・ウルフ",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 46,
+  "def": 26,
+  "hp": 108,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_223",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 31 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 31,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP10",
+   "file": "OP10-084 (C サンファン・ウルフ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc225",
+  "name": "蒙多尔",
+  "en": "シャーロット・モンドール",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 47,
+  "def": 27,
+  "hp": 111,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_225",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 14（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 14,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP11",
+   "file": "OP11-072 (UC シャーロット・モンドール).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc226",
+  "name": "モーガン",
+  "en": "モーガン",
+  "faction": "marine",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 44,
+  "def": 26,
+  "hp": 105,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_226",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 17 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 17
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP11",
+   "file": "OP11-094 (C モーガン).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc227",
+  "name": "ヒグマ",
+  "en": "ヒグマ",
+  "faction": "cp9",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 43,
+  "def": 25,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_227",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 17 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 17
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP13",
+   "file": "OP13-013 (C ヒグマ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc228",
+  "name": "寇沙",
+  "en": "コーザ",
+  "faction": "emperor",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 47,
+  "def": 27,
+  "hp": 110,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_228",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 17 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 17
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-004 (C コーザ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc229",
+  "name": "シャンブルズ",
+  "en": "シャンブルズ",
+  "faction": "revolutionary",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 45,
+  "def": 26,
+  "hp": 106,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_229",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 14（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 14,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-020 (C シャンブルズ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc230",
+  "name": "ハムレット",
+  "en": "ハムレット",
+  "faction": "strawhat",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 43,
+  "def": 25,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_230",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 14（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 14,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-024 (C ハムレット).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc231",
+  "name": "ミス・ウェンズデー",
+  "en": "ミス・ウェンズデー",
+  "faction": "marine",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 46,
+  "def": 27,
+  "hp": 109,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_231",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 31 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 31,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-034 (SR ミス・ウェンズデー).jpg",
+   "rarity": "SR"
+  }
+ },
+ {
+  "id": "nc232",
+  "name": "Mr.9",
+  "en": "Mr.9",
+  "faction": "baroque",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 45,
+  "def": 26,
+  "hp": 107,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_232",
+   "name": "连斩",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 28 伤害并流血 2 回合（每回合 8）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 28
+    },
+    {
+     "type": "dot",
+     "target": "enemy",
+     "value": 8,
+     "duration": 2,
+     "kind": "bleed"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-037 (C Mr.9).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc233",
+  "name": "スカーレット",
+  "en": "スカーレット",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 43,
+  "def": 25,
+  "hp": 101,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_233",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-042 (R スカーレット).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc234",
+  "name": "Tボーン",
+  "en": "Tボーン",
+  "faction": "cp9",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 46,
+  "def": 27,
+  "hp": 108,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_234",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 22 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 22
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-049 (R Tボーン).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc235",
+  "name": "甘·福尔",
+  "en": "ガン・フォール",
+  "faction": "baroque",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 46,
+  "def": 26,
+  "hp": 108,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_235",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 25 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 25,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-054 (R ガン・フォール).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc236",
+  "name": "モンブラン・クリケット",
+  "en": "モンブラン・クリケット",
+  "faction": "fishman",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 43,
+  "def": 25,
+  "hp": 102,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_236",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 31 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 31,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB01",
+   "file": "EB01-058 (C モンブラン・クリケット).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc238",
+  "name": "GERMA 66",
+  "en": "GERMA 66",
+  "faction": "pirate7",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 42,
+  "def": 24,
+  "hp": 99,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_238",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 22 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 22
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-039 (C GERMA 66).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc239",
+  "name": "梅利",
+  "en": "ゴーイング・メリー号",
+  "faction": "emperor",
+  "rarity": "SSR",
+  "cost": 5,
+  "atk": 46,
+  "def": 27,
+  "hp": 109,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_239",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 31 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 31,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB02",
+   "file": "EB02-041 (R ゴーイング・メリー号).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc240",
+  "name": "ひばり",
+  "en": "ひばり",
+  "faction": "marine",
+  "rarity": "SSR",
+  "cost": 6,
+  "atk": 47,
+  "def": 27,
+  "hp": 111,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_240",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 14（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 14,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-008 (R ひばり).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc241",
+  "name": "イスカ",
+  "en": "イスカ",
+  "faction": "emperor",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 57,
+  "def": 33,
+  "hp": 135,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_241",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-022 (R イスカ).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc242",
+  "name": "可雅",
+  "en": "カヤ",
+  "faction": "baroque",
+  "rarity": "SSS",
+  "cost": 8,
+  "atk": 62,
+  "def": 36,
+  "hp": 149,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_242",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-023 (C カヤ).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc244",
+  "name": "孔雀",
+  "en": "孔雀",
+  "faction": "bigmom",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 54,
+  "def": 32,
+  "hp": 129,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_244",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 29。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "EB03",
+   "file": "EB03-041 (R 孔雀).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc245",
+  "name": "ゴムゴムの火拳銃",
+  "en": "ゴムゴムの火拳銃",
+  "faction": "baroque",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 52,
+  "def": 31,
+  "hp": 124,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_245",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 16（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 16,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-026 (R ゴムゴムの火拳銃).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc246",
+  "name": "修罗",
+  "en": "アシュラ童子",
+  "faction": "baroque",
+  "rarity": "SSS",
+  "cost": 8,
+  "atk": 62,
+  "def": 36,
+  "hp": 149,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_246",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 35 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 35,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-032 (UC アシュラ童子).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc248",
+  "name": "傳ジロー",
+  "en": "傳ジロー",
+  "faction": "pirate7",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 58,
+  "def": 34,
+  "hp": 138,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_248",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-046 (R 傳ジロー).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc249",
+  "name": "雷藏",
+  "en": "雷ぞう",
+  "faction": "revolutionary",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 53,
+  "def": 31,
+  "hp": 127,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_249",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 19 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 19
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-052 (UC 雷ぞう).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc250",
+  "name": "スマイリー",
+  "en": "スマイリー",
+  "faction": "revolutionary",
+  "rarity": "SSS",
+  "cost": 8,
+  "atk": 56,
+  "def": 33,
+  "hp": 136,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_250",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 35 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 35,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-072 (C スマイリー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc251",
+  "name": "三日月形砂丘",
+  "en": "三日月形砂丘",
+  "faction": "pirate7",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 58,
+  "def": 35,
+  "hp": 138,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_251",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 19 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 19
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-089 (C 三日月形砂丘).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc252",
+  "name": "人斬り鎌ぞう",
+  "en": "人斬り鎌ぞう",
+  "faction": "baroque",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 54,
+  "def": 32,
+  "hp": 128,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_252",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-108 (UC 人斬り鎌ぞう).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc253",
+  "name": "雷鳴八卦",
+  "en": "雷鳴八卦",
+  "faction": "revolutionary",
+  "rarity": "SSS",
+  "cost": 8,
+  "atk": 56,
+  "def": 33,
+  "hp": 135,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_253",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 19 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 19
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP01",
+   "file": "OP01-119 (R 雷鳴八卦).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc254",
+  "name": "マスクド・デュース",
+  "en": "マスクド・デュース",
+  "faction": "bigmom",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 58,
+  "def": 35,
+  "hp": 138,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_254",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 19 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 19
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-017 (R マスクド・デュース).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc255",
+  "name": "西西里安",
+  "en": "シシリアン",
+  "faction": "fishman",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 54,
+  "def": 32,
+  "hp": 129,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_255",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 29。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-032 (UC シシリアン).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc256",
+  "name": "サディちゃん",
+  "en": "サディちゃん",
+  "faction": "cp9",
+  "rarity": "SSS",
+  "cost": 8,
+  "atk": 55,
+  "def": 32,
+  "hp": 133,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_256",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 26 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-073 (R サディちゃん).jpg",
+   "rarity": "R"
+  }
+ },
+ {
+  "id": "nc257",
+  "name": "サルデス",
+  "en": "サルデス",
+  "faction": "pirate7",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 58,
+  "def": 35,
+  "hp": 138,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_257",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 35 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 35,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-074 (C サルデス).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc258",
+  "name": "贝尔梅尔",
+  "en": "ベルメール",
+  "faction": "baroque",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 55,
+  "def": 32,
+  "hp": 131,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_258",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 26 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP02",
+   "file": "OP02-112 (UC ベルメール).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc259",
+  "name": "アディオ",
+  "en": "アディオ",
+  "faction": "bigmom",
+  "rarity": "SSS",
+  "cost": 8,
+  "atk": 55,
+  "def": 32,
+  "hp": 132,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_259",
+   "name": "威压",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "敌方全体 19 伤害。",
+   "effects": [
+    {
+     "type": "aoeDamage",
+     "target": "enemyAll",
+     "value": 19
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-002 (UC アディオ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc261",
+  "name": "黑带",
+  "en": "クロオビ",
+  "faction": "pirate7",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 55,
+  "def": 32,
+  "hp": 129,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_261",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 26 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-026 (UC クロオビ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc262",
+  "name": "啾",
+  "en": "チュウ",
+  "faction": "cp9",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 60,
+  "def": 35,
+  "hp": 143,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_262",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 26 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-029 (UC チュウ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc263",
+  "name": "パール",
+  "en": "パール",
+  "faction": "bigmom",
+  "rarity": "SSS",
+  "cost": 8,
+  "atk": 54,
+  "def": 32,
+  "hp": 130,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_263",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 29。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-031 (C パール).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc264",
+  "name": "カルネ",
+  "en": "カルネ",
+  "faction": "emperor",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 54,
+  "def": 32,
+  "hp": 128,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_264",
+   "name": "不屈",
+   "type": "passive",
+   "desc": "HP 低于 30% 受伤后自愈 16（每回合 1 次）。",
+   "effects": [
+    {
+     "type": "conditionalHeal",
+     "value": 16,
+     "threshold": 0.3,
+     "on": "onDamaged"
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-045 (UC カルネ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc265",
+  "name": "パティ",
+  "en": "パティ",
+  "faction": "strawhat",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 60,
+  "def": 35,
+  "hp": 143,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_265",
+   "name": "冲阵",
+   "type": "active",
+   "energy": 3,
+   "cd": 2,
+   "desc": "单体 35 伤害（无视 40% 防御）。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 35,
+     "pierce": 0.4
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-049 (UC パティ).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc266",
+  "name": "约萨库",
+  "en": "ヨサク＆ジョニー",
+  "faction": "cp9",
+  "rarity": "SSS",
+  "cost": 8,
+  "atk": 54,
+  "def": 32,
+  "hp": 131,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_266",
+   "name": "吸取",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "单体 26 伤害并等量治疗自身。",
+   "effects": [
+    {
+     "type": "drain",
+     "target": "enemy",
+     "value": 26
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-053 (C ヨサク＆ジョニー).jpg",
+   "rarity": "C"
+  }
+ },
+ {
+  "id": "nc268",
+  "name": "シャーリー",
+  "en": "シャーリー",
+  "faction": "bigmom",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 50,
+  "def": 30,
+  "hp": 118,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_268",
+   "name": "治疗之歌",
+   "type": "active",
+   "energy": 2,
+   "cd": 2,
+   "desc": "治疗血量最低友军 29。",
+   "effects": [
+    {
+     "type": "heal",
+     "target": "allyLowest",
+     "value": 29
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-104 (UC シャーリー).jpg",
+   "rarity": "UC"
+  }
+ },
+ {
+  "id": "nc269",
+  "name": "欧培拉",
+  "en": "シャーロット・オペラ",
+  "faction": "pirate7",
+  "rarity": "SSS",
+  "cost": 7,
+  "atk": 59,
+  "def": 35,
+  "hp": 142,
+  "title": "伟大航路的战士",
+  "skill": {
+   "id": "skg_269",
+   "name": "雷鸣",
+   "type": "active",
+   "energy": 2,
+   "cd": 1,
+   "desc": "单体 29 雷伤害，30% 麻痹。",
+   "effects": [
+    {
+     "type": "damage",
+     "target": "enemy",
+     "value": 29,
+     "element": "thunder"
+    },
+    {
+     "type": "debuff",
+     "target": "enemy",
+     "kind": "stun",
+     "chance": 0.3,
+     "duration": 1
+    }
+   ]
+  },
+  "_src": {
+   "dir": "OP03",
+   "file": "OP03-106 (C シャーロット・オペラ).jpg",
+   "rarity": "C"
+  }
+ }
+]
