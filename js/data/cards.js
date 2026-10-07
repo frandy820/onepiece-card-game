@@ -338,7 +338,12 @@ function getCard(id){ return ALL_CARDS[id] || null; }
 function isCharCard(c){ return c && !c.token && !isEquipCard(c); }
 function isEquipCard(c){ return c && !!c.kind; }
 
-/* 导出（Node 测试用） */
+/* 导出：浏览器挂 window，Node 走 module.exports */
+if (typeof window !== 'undefined') {
+  window.RARITY = RARITY; window.RARITY_ORDER = RARITY_ORDER; window.FACTIONS = FACTIONS;
+  window.CHARACTER_CARDS = CHARACTER_CARDS; window.EQUIP_CARDS = EQUIP_CARDS; window.TOKEN_CARDS = TOKEN_CARDS;
+  window.ALL_CARDS = ALL_CARDS; window.getCard = getCard; window.isCharCard = isCharCard; window.isEquipCard = isEquipCard;
+}
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { RARITY, RARITY_ORDER, FACTIONS, CHARACTER_CARDS, EQUIP_CARDS, TOKEN_CARDS, ALL_CARDS, getCard, isCharCard, isEquipCard };
 }

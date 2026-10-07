@@ -19,6 +19,9 @@ const G = {
 const E = createEngine({ cards: { getCard: window.getCard, TOKEN_CARDS: window.TOKEN_CARDS, isCharCard: window.isCharCard, isEquipCard: window.isEquipCard } });
 const AI = createAI(window.getCard);
 const SAVE = createSaveSystem(window.localStorage);
+/* 防御式事件绑定：元素缺失时跳过，不阻断启动 */
+function bindClick(sel, fn) { const el = typeof sel === 'string' ? $(sel) : sel; if (el) el.onclick = fn; else console.warn('[boot] missing button:', sel); }
+
 const $ = (sel) => document.querySelector(sel);
 const $$ = (sel) => Array.from(document.querySelectorAll(sel));
 
@@ -56,10 +59,10 @@ function artOf(cardId) {
  * 主菜单
  * ========================================================= */
 function renderHome() {
-  $('#home-gold').textContent = `฿ ${G.save.gold} · 金币 ${G.save.gold}`;
-  const cont = $('#battle-resume');
-  if (G.save.ongoing) cont.style.display = '';
-  else cont.style.display = 'none';
+  const goldEl = $('#home-gold');
+  if (goldEl) goldEl.textContent = `฿ ${G.save.gold} · 金币 ${G.save.gold}`;
+  const cont = $('#battle-resume') || document.querySelector('.btn-resume');
+  if (cont) cont.style.display = G.save.ongoing ? '' : 'none';
 }
 
 /* =========================================================
@@ -135,8 +138,8 @@ function openStageBrief(st, ch) {
       </div>
     </div>`;
   m.classList.add('show');
-  $('#mb-close').onclick = () => m.classList.remove('show');
-  $('#mb-go').onclick = () => { m.classList.remove('show'); startAdventureBattle(st, ch); };
+  bindClick('#mb-close', () => m.classList.remove('show'));
+  bindClick('#mb-go', () => { m.classList.remove('show'); startAdventureBattle(st, ch); });
 }
 
 /* =========================================================
@@ -336,7 +339,7 @@ function onUnitClick(uid, side) {
     </div>
   </div>`;
   m.classList.add('show');
-  $('#ua-close').onclick = () => m.classList.remove('show');
+  bindClick('#ua-close', () => m.classList.remove('show'));
   const atkBtn = $('#ua-atk');
   if (atkBtn) atkBtn.onclick = () => { m.classList.remove('show'); G.picking = { mode: 'attack', unitUid: uid }; toast('选择攻击目标'); $$('#field-e .unit').forEach(el => el.classList.add('target-pick')); };
   const sklBtn = $('#ua-skl');
@@ -439,7 +442,7 @@ const gold = goldBase + Math.floor(Math.random() * goldSpan);
     </div>
   </div>`;
   m.classList.add('show');
-  $('#rb-close').onclick = () => { m.classList.remove('show'); G.battle = null; renderHome(); show('screen-home'); renderAdventure(); };
+  bindClick('#rb-close', () => { m.classList.remove('show'); G.battle = null; renderHome(); show('screen-home'); renderAdventure(); });
   const nb = $('#rb-next');
   if (nb) nb.onclick = () => {
     m.classList.remove('show'); G.battle = null;
@@ -499,7 +502,7 @@ function renderCollection() {
     bar.appendChild(chip);
   });
   const grid = $('#col-grid'); grid.innerHTML = '';
-  const all = window.CHARACTER_CARDS.concat(window.EQUIP_CARDS);
+  const all = [].concat(window.CHARACTER_CARDS || [], window.EQUIP_CARDS || []);
   const ownedCount = all.filter(c => G.save.cards[c.id]).length;
   $('#col-count').textContent = `图鉴 ${ownedCount}/${all.length} · SSS ${SAVE.countSSS(G.save)} 张`;
   all.forEach(c => {
@@ -543,7 +546,7 @@ function openCardModal(c, unit) {
     <div class="m-actions"><button class="btn ghost" id="cd-close">关闭</button></div>
   </div>`;
   m.classList.add('show');
-  $('#cd-close').onclick = () => m.classList.remove('show');
+  bindClick('#cd-close', () => m.classList.remove('show'));
 }
 
 /* =========================================================
@@ -597,7 +600,7 @@ function doGacha(kind) {
   let rarity = rollRarity(conf.rates);
   if (G.save.gacha.pity >= 40 && ['SSR', 'SSS'].indexOf(rarity) < 0) { rarity = 'SSR'; G.save.gacha.pity = 0; }
   if (['SSR', 'SSS'].indexOf(rarity) >= 0) G.save.gacha.pity = 0;
-  const pool = window.CHARACTER_CARDS.concat(window.EQUIP_CARDS).filter(c => c.rarity === rarity && !['luffy_gear5'].includes(c.id) || (rarity === 'SSS' && ['shanks','whitebeard','mihawk'].includes(c.id)));
+  const pool = [].concat(window.CHARACTER_CARDS || [], window.EQUIP_CARDS || []).filter(c => c.rarity === rarity && !['luffy_gear5'].includes(c.id) || (rarity === 'SSS' && ['shanks','whitebeard','mihawk'].includes(c.id)));
   const pick = pool[Math.floor(Math.random() * pool.length)];
   SAVE.addCard(G.save, pick.id, `${conf.name}抽取`);
   if (kind === 'premium') G.save.gacha.premiumCount++; else G.save.gacha.basicCount++;
@@ -609,7 +612,7 @@ function doGacha(kind) {
     <div class="m-actions" style="justify-content:center"><button class="btn ghost" id="gc-ok">收下</button></div>
   </div>`;
   m.classList.add('show');
-  $('#gc-ok').onclick = () => m.classList.remove('show');
+  bindClick('#gc-ok', () => m.classList.remove('show'));
   renderShop();
 }
 function rollRarity(rates) {
@@ -682,33 +685,33 @@ function boot() {
     setTimeout(() => toast('欢迎出海！先去【冒险】打第一关吧', 3000), 600);
   }
   /* 绑定导航 */
-  $('#nav-adventure').onclick = () => renderAdventure();
-  $('#nav-versus').onclick = () => renderVersus();
-  $('#nav-deck').onclick = () => renderDeck();
-  $('#nav-collection').onclick = () => renderCollection();
-  $('#nav-shop').onclick = () => renderShop();
-  $('#nav-ledger').onclick = () => renderLedger();
-  $('#nav-settings').onclick = () => renderSettings();
-  $('#btn-resume').onclick = () => resumeBattle();
-  $('#btn-back-home').onclick = () => { renderHome(); show('screen-home'); };
+  bindClick('#nav-adventure', () => renderAdventure());
+  bindClick('#nav-versus', () => renderVersus());
+  bindClick('#nav-deck', () => renderDeck());
+  bindClick('#nav-collection', () => renderCollection());
+  bindClick('#nav-shop', () => renderShop());
+  bindClick('#nav-ledger', () => renderLedger());
+  bindClick('#nav-settings', () => renderSettings());
+  bindClick('#btn-resume', () => resumeBattle());
+  bindClick('.back-home', () => { renderHome(); show('screen-home'); });
   $$('.back-home').forEach(b => b.onclick = () => { renderHome(); show('screen-home'); });
-  $('#turn-btn').onclick = endPlayerTurn;
+  bindClick('#turn-btn', endPlayerTurn);
   $('#btn-flee').onclick = () => {
     if (!confirm('放弃这场战斗并返回？（进度不清除）')) return;
     if (G.save.ongoing) SAVE.clearOngoing(G.save);
     G.battle = null; renderHome(); show('screen-home');
   };
   /* 对战 */
-  $('#vs-easy').onclick = () => startVersusBattle('easy');
-  $('#vs-normal').onclick = () => startVersusBattle('normal');
-  $('#vs-hard').onclick = () => startVersusBattle('hard');
+  bindClick('#vs-easy', () => startVersusBattle('easy'));
+  bindClick('#vs-normal', () => startVersusBattle('normal'));
+  bindClick('#vs-hard', () => startVersusBattle('hard'));
   /* 抽卡 */
-  $('#gacha-basic').onclick = () => doGacha('basic');
-  $('#gacha-premium').onclick = () => doGacha('premium');
+  bindClick('#gacha-basic', () => doGacha('basic'));
+  bindClick('#gacha-premium', () => doGacha('premium'));
   /* 设置 */
-  $('#btn-export').onclick = exportSave;
-  $('#btn-import').onclick = importSave;
-  $('#btn-reset').onclick = resetSave;
+  bindClick('#btn-export', exportSave);
+  bindClick('#btn-import', importSave);
+  bindClick('#btn-reset', resetSave);
   /* 战斗中切后台自动存档 */
   document.addEventListener('visibilitychange', () => { if (document.hidden) autosaveBattle(); });
   window.addEventListener('pagehide', () => { if (G.battle && G.battle.status === 'running') SAVE.saveOngoing(G.save, G.battle, G.battleMeta); });
