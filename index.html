@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#10233f">
+<title>海贼王·伟大航路卡牌对战</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ========== 主菜单 ========== -->
+  <section class="screen active" id="screen-home">
+    <div class="home-sky">
+      <div class="home-wave w2"></div>
+      <div class="home-wave w1"></div>
+      <div class="home-ship">⛵</div>
+    </div>
+    <div class="home-gold" id="home-gold">฿ 0 · 金币 0</div>
+    <div class="home-title">
+      <div class="zh">伟大航路</div>
+      <div class="sub">卡 牌 对 战</div>
+    </div>
+    <div class="home-menu">
+      <button class="btn red" id="btn-resume" style="display:none">⏵ 继续中断的战斗</button>
+      <button class="btn red" id="nav-adventure">🗺 冒险模式（剧情闯关）</button>
+      <button class="btn blue" id="nav-versus">⚔ 对战模式</button>
+      <button class="btn" id="nav-deck">🗂 卡组编辑</button>
+      <button class="btn" id="nav-collection">📚 卡牌图鉴</button>
+      <button class="btn" id="nav-shop">🎁 商店·抽卡</button>
+      <button class="btn ghost" id="nav-ledger">📒 获得记录</button>
+      <button class="btn ghost" id="nav-settings">⚙ 设置</button>
+    </div>
+  </section>
+
+  <!-- ========== 冝险模式章节 ========== -->
+  <section class="screen" id="screen-adventure">
+    <div class="topbar"><button class="back back-home">‹</button><h1>冒险模式 · 剧情闯关</h1><span style="width:30px"></span></div>
+    <div class="scroller" id="chapter-list"></div>
+  </section>
+
+  <!-- ========== 对战模式 ========== -->
+  <section class="screen" id="screen-versus">
+    <div class="topbar"><button class="back back-home">‹</button><h1>对战模式</h1><span style="width:30px"></span></div>
+    <div class="scroller" style="display:flex;flex-direction:column;justify-content:center;gap:14px;padding:24px">
+      <div class="gacha-panel" style="text-align:center">
+        <h3>⚔ 挑战 AI 对手</h3>
+        <p style="font-size:12.5px;color:#6b5233;margin:8px 0 12px">用自己的卡组对战 AI，验证强度、赢取金币。难度越高奖励越多。</p>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <button class="btn blue" id="vs-easy">🌊 简单（敌方 HP70 · 强度 80%）</button>
+          <button class="btn red" id="vs-normal">🔥 普通（敌方 HP100 · 强度 100%）</button>
+          <button class="btn" id="vs-hard">🌋 困难（敌方 HP130 · 强度 120%）</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 战斗 ========== -->
+  <section class="screen" id="screen-battle">
+    <div class="b-top">
+      <button class="back" id="btn-flee" style="color:#ff8787">‹</button>
+      <div class="stage-name" id="b-stage-name">战斗</div>
+      <div class="wave-tag" id="b-wave-tag"></div>
+       </div>
+    <div class="hp-bar-wrap">
+      <div class="hp-bar enemy" id="hp-e"><div class="hp-label"><span>敌方</span><span></span></div><div class="hp-track"><div class="hp-fill"></div></div></div>
+      <div class="hp-bar" id="hp-p"><div class="hp-label"><span>我方</span><span></span></div><div class="hp-track"><div class="hp-fill"></div></div></div>
+    </div>
+    <div class="battle-field">
+      <div class="field-label">敌方场上</div>
+      <div class="unit-grid" id="field-e"></div>
+      <div class="field-label" style="margin-top:10px">我方场上</div>
+      <div class="unit-grid" id="field-p"></div>
+    </div>
+    <div class="b-log" id="b-log"></div>
+    <div class="hand-wrap">
+      <div class="hand-scroll" id="hand"></div>
+    </div>
+    <div class="b-bottom">
+      <div class="energy-orbs" id="energy"></div>
+      <button class="btn red turn-btn" id="turn-btn">结束回合 ▶</button>
+    </div>
+  </section>
+
+  <!-- ========== 卡组编辑 ========== -->
+  <section class="screen" id="screen-deck">
+    <div class="topbar"><button class="back back-home">‹</button><h1>卡组编辑</h1><span style="width:30px"></span></div>
+    <div class="scroller">
+      <div class="deck-stats" id="deck-stats"></div>
+      <div class="deck-list" id="deck-list"></div>
+      <div class="field-label" style="color:#cfe3ff;margin:14px 0 6px">点击加入卡组（同名卡最多 3 张，上限 15 张）</div>
+      <div class="deck-add-grid" id="deck-add"></div>
+    </div>
+  </section>
+
+  <!-- ========== 图鉴 ========== -->
+  <section class="screen" id="screen-collection">
+    <div class="topbar"><button class="back back-home">‹</button><h1 id="col-count">卡牌图鉴</h1><span style="width:30px"></span></div>
+    <div class="filter-bar" id="col-filter"></div>
+    <div class="scroller" style="padding:0"><div class="collection-grid" id="col-grid"></div></div>
+  </section>
+
+  <!-- ========== 商店 ========== -->
+  <section class="screen" id="screen-shop">
+    <div class="topbar"><button class="back back-home">‹</button><h1>商店·抽卡</h1><span style="width:30px"></span></div>
+    <div class="scroller">
+      <div style="color:var(--gold);font-weight:800;font-size:14px;margin-bottom:10px" id="shop-gold"></div>
+      <div class="gacha-panel">
+        <h3>🎁 普通召唤</h3>
+        <div class="rates">N 50% · R 32% · SR 14% · SSR 3.5% · SSS 0.5%<br>40 次未出 SSR 以上必出 SSR（保底）</div>
+        <button class="btn blue" id="gacha-basic">召唤 ×1（200 金币）</button>
+      </div>
+      <div class="gacha-panel">
+        <h3>💎 高级召唤</h3>
+        <div class="rates">N 28% · R 36% · SR 24% · SSR 10% · SSS 2%<br>40 次未出 SSR 以上必出 SSR（保底）</div>
+        <button class="btn red" id="gacha-premium">召唤 ×1（520 金币）</button>
+      </div>
+      <p style="font-size:11px;color:#9db8dd;line-height:1.7">SSS 卡主要获取途径：冒险模式满血/满积分通关。抽卡不出 luffy_gear5（终局奖励卡）。</p>
+    </div>
+  </section>
+
+  <!-- ========== 台账 ========== -->
+  <section class="screen" id="screen-ledger">
+    <div class="topbar"><button class="back back-home">‹</button><h1>获得记录（台账）</h1><span style="width:30px"></span></div>
+    <div class="scroller" id="ledger-list"></div>
+  </section>
+
+  <!-- ========== 设置 ========== -->
+  <section class="screen" id="screen-settings">
+    <div class="topbar"><button class="back back-home">‹</button><h1>设置</h1><span style="width:30px"></span></div>
+    <div class="scroller">
+      <div class="gacha-panel">
+        <h3>💾 存档备份</h3>
+        <p style="font-size:12px;color:#6b5233;margin:6px 0 10px">导出存档代码保存到备忘录/微信文件传输助手，换手机或清缓存后可导入恢复。</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn blue small" id="btn-export">导出存档</button>
+          <button class="btn small" id="btn-import">导入存档</button>
+          <button class="btn red small" id="btn-reset">重置进度</button>
+        </div>
+        <textarea class="io-area" id="io-area" placeholder="存档代码会出现在这里；导入时粘贴到这里"></textarea>
+      </div>
+      <div class="about-box">
+        <p><b>关于本作</b></p>
+        <p>海贼王主题同人卡牌对战游戏（非商业学习项目）。玩法参考经典卡牌对战：召唤伙伴、装备武器、发动技能、按剧情章节闯关。全部数据保存在手机本地浏览器。</p>
+        <p style="margin-top:8px"><b>数据说明</b></p>
+        <p>进度/收藏保存在 localStorage；战斗中断自动保存，刷新后可恢复；主存档每次写入前自动备份，损坏自动回滚。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 通用弹层 -->
+  <div class="modal-mask" id="modal"></div>
+  <div id="toast"></div>
+</div>
+<script src="js/data/cards.js"></script>
+<script src="js/data/chapters.js"></script>
+<script src="js/engine/engine.js"></script>
+<script src="js/engine/ai.js"></script>
+<script src="js/save.js"></script>
+<script src="js/assets.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
