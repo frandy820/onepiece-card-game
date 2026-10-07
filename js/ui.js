@@ -35,9 +35,12 @@ function show(screenId) {
 }
 
 /* ---------- 卡面 ---------- */
+/* 有真实卡面图的卡（artmap.js 生成）优先用图，装备卡与其余卡回落 SVG 占位图 */
 function artOf(cardId) {
   const c = getCard(cardId);
   if (!c) return '';
+  const realIds = (typeof REAL_ART_IDS !== 'undefined') ? REAL_ART_IDS : [];
+  if (!c.kind && realIds.indexOf(cardId) >= 0) return 'assets/cards/' + cardId + '.jpg';
   return cardArtURI(c, (FACTIONS[c.faction] || {}).color, (RARITY[c.rarity] || {}).color);
 }
 
