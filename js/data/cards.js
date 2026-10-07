@@ -280,7 +280,7 @@ const CHARACTER_CARDS = [
       desc:'单体 66 伤害（线控：目标无法闪避）。',
       effects:[ {type:'damage', target:'enemy', value:66, cannotMiss:true} ] } },
   { id:'cracker', name:'饼干骑士·克力架', en:'Cracker', faction:'bigmom', rarity:'SSR', cost:6, atk:42, def:40, hp:110, title:'千军饼干',
-    skill:{ id:'sk_cracker', name:'饼干士兵·无穷', type:'active', energy:2, cd:1,
+    skill:{ id:'sk_cracker', name:'饼干士兵·无穷', type:'active', energy:2, cd:2,
       desc:'召唤 2 个饼干兵（12/12/40）分担伤害。',
       effects:[ {type:'summonToken', token:'cookie_soldier', count:2} ] } },
   { id:'katakuri', name:'卡塔库栗', en:'Katakuri', faction:'bigmom', rarity:'SSS', cost:7, atk:54, def:38, hp:124, title:'见闻色未来视',
@@ -291,7 +291,7 @@ const CHARACTER_CARDS = [
 
 /* 饼干兵等召唤物（不进收藏，仅战斗内生成） */
 const TOKEN_CARDS = {
-  cookie_soldier: { id:'cookie_soldier', name:'饼干兵', faction:'bigmom', rarity:'N', cost:0, atk:12, def:12, hp:40, token:true,
+  cookie_soldier: { id:'cookie_soldier', name:'饼干兵', faction:'bigmom', rarity:'N', cost:0, atk:10, def:10, hp:32, token:true,
     skill:{ id:'sk_cookie', name:'饼干拳', type:'active', energy:1, cd:1, desc:'单体 10 伤害。', effects:[ {type:'damage', target:'enemy', value:10} ] } }
 };
 

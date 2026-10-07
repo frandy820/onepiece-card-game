@@ -198,8 +198,8 @@ const CHAPTERS = [
     story:'斗技场的火焰与暗巷的哭泣。明哥的鸟笼正在收紧，卡拉班吉卡的悲剧不能重演。',
     stages: [
       { id:'ch9-1', name:'格斗军团·克力架', boss:'cracker',
-        waves:[ ['hody','mr2_bon'], ['cracker','lucci'] ],
-        enemyHp:116, enemyDeck:['cracker','lucci','hody','mr2_bon'], enemyStrategy:'summon',
+        waves:[ ['smoker_enforcer','mr2_bon'], ['cracker','lucci'] ],
+        enemyHp:106, enemyDeck:['cracker','lucci','hody','mr2_bon'], enemyStrategy:'boss',
         intro:'无穷无尽的饼干士兵——千军饼干压境！',
         reward:{ gold:600, cards:['eq_thousand_sunny'] },
         perfectReward:{ cards:['doflamingo_boss'] }, scale:1.22 },

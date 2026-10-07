@@ -36,6 +36,14 @@ function show(screenId) {
 
 /* ---------- 卡面 ---------- */
 /* 有真实卡面图的卡（artmap.js 生成）优先用图，装备卡与其余卡回落 SVG 占位图 */
+/* 真图加载失败自动回落 SVG 占位图（消除破图裂 icon） */
+function artFallback(img) {
+  const cid = img.getAttribute('data-cid') || '';
+  const c = getCard(cid);
+  if (!c || img.dataset.fb === '1') return;
+  img.dataset.fb = '1';
+  img.src = cardArtURI(c, (FACTIONS[c.faction] || {}).color, (RARITY[c.rarity] || {}).color);
+}
 function artOf(cardId) {
   const c = getCard(cardId);
   if (!c) return '';
@@ -183,7 +191,7 @@ function unitHtml(u, side) {
   if (u.statuses.some(s => s.kind === 'silence')) badges.push(`<span class="u-badge">封印</span>`);
   return `
   <div class="unit ${side === 'p' ? 'mine' : 'enemy'} ${canAtk || canSkl ? 'actable' : ''}" data-uid="${u.uid}" data-side="${side}">
-    <img class="u-art" src="${artOf(u.cardId)}" alt="${esc(u.name)}">
+    <img class="u-art" src="${artOf(u.cardId)}" data-cid="${u.cardId}" onerror="artFallback(this)" loading="lazy" alt="${esc(u.name)}">
     <div class="u-badges">${badges.join('')}</div>
     ${u.shield > 0 ? `<div class="u-shield">${u.shield}</div>` : ''}
     <div class="u-name">${esc(u.name)}</div>
@@ -217,7 +225,7 @@ function renderBattle() {
     return `<div class="hcard ${playable ? 'playable' : ''} ${G.selectedHand === i ? 'selected' : ''}" data-i="${i}">
       <div class="h-cost">${c.cost}</div>
       <div class="h-rar" style="background:${(RARITY[c.rarity] || {}).color}">${c.rarity}</div>
-      <img class="h-art" src="${artOf(cid)}" alt="">
+      <img class="h-art" src="${artOf(cid)}" data-cid="${cid}" onerror="artFallback(this)" loading="lazy" alt="">
       <div class="h-name">${esc(c.name)}</div>
       <div class="h-info">${isEquipCard(c) ? c.kind === 'weapon' ? '🗡 武器' : c.kind === 'armor' ? '🛡 防具' : '💎 饰品' : `⚔${c.atk} 🛡${c.def} ♥${c.hp}`}</div>
     </div>`;
@@ -399,7 +407,7 @@ function showBattleResult(B) {
     }
     G.save.stats.battles++; G.save.stats.wins++; G.save.stats.adventureWins++;
     SAVE.write(G.save);
-    const cardBox = (cid) => `<div class="rc"><img src="${artOf(cid)}" alt=""><div class="rn">${esc(getCard(cid).name)}</div><div class="rr" style="color:${(RARITY[getCard(cid).rarity] || {}).color}">${getCard(cid).rarity}</div></div>`;
+    const cardBox = (cid) => `<div class="rc"><img src="${artOf(cid)}" data-cid="${cid}" onerror="artFallback(this)" loading="lazy" alt=""><div class="rn">${esc(getCard(cid).name)}</div><div class="rr" style="color:${(RARITY[getCard(cid).rarity] || {}).color}">${getCard(cid).rarity}</div></div>`;
     extraHtml = `
       <div class="r-sub">积分 ${B.score} · ${B.perfect ? '完美通关！' : '通关（再接再厉冲击完美）'}</div>
       ${gained.length ? `<div class="reward-cards">${gained.map(cardBox).join('')}</div>` : ''}
@@ -407,14 +415,19 @@ function showBattleResult(B) {
       <div class="r-sub" style="margin-top:6px">+${st.reward.gold} 金币${first ? ' · 首通掉落新卡' : '（重复通关不再掉卡）'}</div>`;
   } else if (win) {
     G.save.stats.battles++; G.save.stats.wins++;
-    const gold = 60 + Math.floor(Math.random() * 40);
+    const diff = (G.battleMeta && G.battleMeta.difficulty) || 'easy';
+const goldBase = diff === 'hard' ? 180 : diff === 'normal' ? 100 : 60;
+const goldSpan = diff === 'hard' ? 80 : diff === 'normal' ? 60 : 40;
+const gold = goldBase + Math.floor(Math.random() * goldSpan);
     G.save.gold += gold;
     SAVE.write(G.save);
     extraHtml = `<div class="r-sub">对战胜利！+${gold} 金币</div>`;
   } else {
     G.save.stats.battles++;
+    const loseGold = 10 + Math.floor(Math.random() * 10);
+    G.save.gold += loseGold;
     SAVE.write(G.save);
-    extraHtml = `<div class="r-sub">败北……调整卡组再战一次！</div>`;
+    extraHtml = `<div class="r-sub">败北……安慰奖 +${loseGold} 金币</div>`;
   }
   const m = $('#modal');
   m.innerHTML = `<div class="modal reward-pop">
@@ -497,7 +510,7 @@ function renderCollection() {
     if (['SSS','SSR','SR','R','N'].includes(G.collectionFilter) && c.rarity !== G.collectionFilter) return;
     const el = document.createElement('div');
     el.className = 'col-card ' + (owned ? 'owned' : 'not-owned');
-    el.innerHTML = `<img src="${artOf(c.id)}" alt=""><div class="cn">${esc(c.name)}</div>
+    el.innerHTML = `<img src="${artOf(c.id)}" data-cid="${c.id}" onerror="artFallback(this)" loading="lazy" alt=""><div class="cn">${esc(c.name)}</div>
       <div class="cr" style="color:${(RARITY[c.rarity] || {}).color}">${c.rarity}${owned ? ' ×' + G.save.cards[c.id] : ' 未获得'}</div>
       ${owned ? `<div class="cc">${G.save.cards[c.id]}</div>` : ''}`;
     el.onclick = () => openCardModal(c);
@@ -512,7 +525,7 @@ function openCardModal(c, unit) {
   const f = FACTIONS[c.faction] || {};
   m.innerHTML = `<div class="modal">
     <h3><span class="rich-badge" style="background:${r.color}">${c.rarity}</span> ${esc(c.name)}</h3>
-    <img class="card-detail-art" src="${artOf(c.id)}" alt="">
+    <img class="card-detail-art" src="${artOf(c.id)}" data-cid="${c.id}" onerror="artFallback(this)" alt="">
     <div class="m-body">
       ${isEquipCard(c)
         ? `<p><b>${c.kind === 'weapon' ? '🗡 武器' : c.kind === 'armor' ? '🛡 防具' : '💎 饰品'}</b>（${f.name || '通用'}）</p>
@@ -542,7 +555,7 @@ function renderDeck() {
     const c = getCard(cid);
     const row = document.createElement('div');
     row.className = 'deck-row';
-    row.innerHTML = `<img src="${artOf(cid)}" alt=""><div style="flex:1"><div class="dn">${esc(c.name)}</div><div class="di">${isEquipCard(c) ? '装备' : `⚔${c.atk} 🛡${c.def} ♥${c.hp}`} · ${c.rarity}</div></div><div class="rm">✕</div>`;
+    row.innerHTML = `<img src="${artOf(cid)}" data-cid="${cid}" onerror="artFallback(this)" loading="lazy" alt=""><div style="flex:1"><div class="dn">${esc(c.name)}</div><div class="di">${isEquipCard(c) ? '装备' : `⚔${c.atk} 🛡${c.def} ♥${c.hp}`} · ${c.rarity}</div></div><div class="rm">✕</div>`;
     row.querySelector('.rm').onclick = () => { G.save.deck.splice(i, 1); SAVE.write(G.save); renderDeck(); };
     list.appendChild(row);
   });
@@ -558,7 +571,7 @@ function renderDeck() {
     const c = getCard(cid);
     const el = document.createElement('div');
     el.className = 'col-card owned';
-    el.innerHTML = `<img src="${artOf(cid)}" alt=""><div class="cn">${esc(c.name)}</div><div class="cr" style="color:${(RARITY[c.rarity] || {}).color}">+ 加入</div>`;
+    el.innerHTML = `<img src="${artOf(cid)}" data-cid="${cid}" onerror="artFallback(this)" loading="lazy" alt=""><div class="cn">${esc(c.name)}</div><div class="cr" style="color:${(RARITY[c.rarity] || {}).color}">+ 加入</div>`;
     el.onclick = () => {
       if (G.save.deck.length >= 15) { toast('卡组已满 15 张'); return; }
       G.save.deck.push(cid); SAVE.write(G.save); renderDeck();

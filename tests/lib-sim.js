@@ -1,6 +1,6 @@
 /* 共享模拟器：脚本玩家（近似真人操作质量） */
 'use strict';
-const ROOT = 'C:/Users/MY/.openclaw-autoclaw/agents/agent-eb89nd/workspace/DELIVERY/onepiece-card-game';
+const ROOT = __dirname + '/..';
 const cards = require(ROOT + '/js/data/cards.js');
 const createEngine = require(ROOT + '/js/engine/engine.js');
 const createAI = require(ROOT + '/js/engine/ai.js');
